@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask + htmx + Tailwind</title>
+    {% assets "css" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}" type="text/css" />
+    {% endassets %}
+    {% assets "js" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+</head>
+<body>
+    <h1 class="mb-8 text-blue-700 font-bold text-2xl">Hi there!</h1>
+    <button
+        hx-post="/button"
+        hx-trigger="click"
+        hx-swap="outerHTML"
+    >
+        Click Me!
+    </button>
+</body>
+</html>

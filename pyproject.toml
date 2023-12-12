@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flask-htmx-tailwind"
+version = "0.1.0"
+description = ""
+authors = ["Luke Carr <me+oss@carr.sh>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.0"
+flask-assets = "^2.1.0"
+livereload = "^2.6.3"
+tornado = "6.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
